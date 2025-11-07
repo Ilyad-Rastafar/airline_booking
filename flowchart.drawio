@@ -1,0 +1,124 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Page-1" id="_S_dPnM21WI_5D5GQrhh">
+    <mxGraphModel dx="509" dy="999" grid="1" gridSize="12" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-xnSQ00KDfEPRc0_86au-44" value="" style="group;fontFamily=Ray Medium;fontSize=15;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1193" y="168" width="1122" height="193.93" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-1" target="-xnSQ00KDfEPRc0_86au-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-1" value="&lt;font&gt;ثبت‌نام و ورود کاربر&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="969.6296296296296" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-3" target="-xnSQ00KDfEPRc0_86au-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-3" value="&lt;font&gt;جستجوی پرواز&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="969.6296296296296" y="55.40857142857143" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-4" target="-xnSQ00KDfEPRc0_86au-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-4" value="&lt;font&gt;کنسلی&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="969.6296296296296" y="166.22571428571428" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-5" target="-xnSQ00KDfEPRc0_86au-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-5" value="&lt;font&gt;خرید بلیط&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="969.6296296296296" y="110.81714285714285" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-6" target="-xnSQ00KDfEPRc0_86au-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-6" value="&lt;font&gt;پر کردن فرم ثبتنام&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="775.7037037037037" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-7" target="-xnSQ00KDfEPRc0_86au-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-7" value="&lt;font&gt;ایمیل/پیامک تایید&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="581.7777777777777" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-8" target="-xnSQ00KDfEPRc0_86au-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-8" value="&lt;font&gt;فعالسازی حساب کاربری&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="387.85185185185185" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-9" value="&lt;font&gt;ایجاد لاگ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="193.92592592592592" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-15" target="-xnSQ00KDfEPRc0_86au-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-15" value="&lt;font&gt;انتخاب مبدا و مقصد&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="775.7037037037037" y="55.40857142857143" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-17" target="-xnSQ00KDfEPRc0_86au-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-17" value="&lt;font&gt;نمایش نتایج&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="581.7777777777777" y="55.40857142857143" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-20" value="&lt;font&gt;ایجاد لاگ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="387.85185185185185" y="55.40857142857143" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-24" target="-xnSQ00KDfEPRc0_86au-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-24" value="&lt;font&gt;انتخاب پرواز&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="775.7037037037037" y="110.81714285714285" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-26" target="-xnSQ00KDfEPRc0_86au-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-26" value="&lt;font&gt;کسر مبلغ از موجودی&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="581.7777777777777" y="110.81714285714285" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-28" target="-xnSQ00KDfEPRc0_86au-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-28" value="&lt;font&gt;رزرو پرواز برای مشتری&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="387.85185185185185" y="110.81714285714285" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-29" target="-xnSQ00KDfEPRc0_86au-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-29" value="&lt;font&gt;ثبت ترنزکشن&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="193.92592592592592" y="110.81714285714285" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-30" value="&lt;font&gt;ایجاد لاگ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry y="110.81714285714285" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-33" target="-xnSQ00KDfEPRc0_86au-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-33" value="&lt;font&gt;ثبت درخواست کنسلی&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="775.7037037037037" y="166.22571428571428" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-35" target="-xnSQ00KDfEPRc0_86au-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-35" value="&lt;font&gt;محاسبه درصد جریمه&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="581.7777777777777" y="166.22571428571428" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Ray Medium;fontSize=15;" edge="1" parent="-xnSQ00KDfEPRc0_86au-44" source="-xnSQ00KDfEPRc0_86au-37" target="-xnSQ00KDfEPRc0_86au-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-37" value="&lt;font&gt;ثبت کنسلی&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="387.85185185185185" y="166.22571428571428" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-40" value="&lt;font&gt;ایجاد لاگ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;fontSize=15;" vertex="1" parent="-xnSQ00KDfEPRc0_86au-44">
+          <mxGeometry x="193.92592592592592" y="166.22571428571428" width="152.37037037037035" height="27.704285714285714" as="geometry" />
+        </mxCell>
+        <mxCell id="-xnSQ00KDfEPRc0_86au-45" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;پروژه رزرو بلیط پرواز&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Ray Medium;" vertex="1" parent="1">
+          <mxGeometry x="1611" y="48" width="285" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
