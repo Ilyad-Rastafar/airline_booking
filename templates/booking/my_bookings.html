@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>My Bookings</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Flight</th>
+        <th>Status</th>
+        <th>Paid</th>
+        <th></th>
+    </tr>
+
+    {% for b in bookings %}
+    <tr>
+        <td>{{ b.flight }}</td>
+        <td>{{ b.status }}</td>
+        <td>{{ b.price_paid }}</td>
+        <td>
+            {% if b.status == "active" %}
+            <a href="{% url 'booking:cancel_booking' b.id %}" class="btn btn-danger btn-sm">Cancel</a>
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

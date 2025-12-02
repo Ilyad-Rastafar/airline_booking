@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Flight Details</h2>
+
+<p><strong>Route:</strong> {{ flight.route }}</p>
+<p><strong>Date:</strong> {{ flight.date }}</p>
+<p><strong>Time:</strong> {{ flight.time }}</p>
+<p><strong>Price:</strong> {{ flight.price }}</p>
+<p><strong>Airline:</strong> {{ flight.airline }}</p>
+
+{% if user.is_authenticated %}
+<a href="{% url 'booking:book_flight' flight.id %}" class="btn btn-success">Book</a>
+{% else %}
+<p>Please login to book.</p>
+{% endif %}
+
+{% endblock %}

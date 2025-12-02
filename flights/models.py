@@ -22,9 +22,9 @@ class Flight(models.Model):
     plane_type = models.CharField(max_length=100)
     date = models.DateField()
     time = models.TimeField()
-    price = models.PositiveIntegerField()
-    seats_total = models.PositiveIntegerField()
-    seats_available = models.PositiveIntegerField()
+    price = models.PositiveIntegerField(default=0)
+    seats_total = models.PositiveIntegerField(default=0)
+    seats_available = models.PositiveIntegerField(default=0)
     cancel_penalty_percent = models.PositiveIntegerField(default=10)
 
     class Meta:

@@ -18,7 +18,7 @@ class Booking(models.Model):
     )
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="active")
 
-    price_paid = models.PositiveIntegerField()
+    price_paid = models.PositiveIntegerField(default=0)
     penalty_amount = models.PositiveIntegerField(default=0)
     final_refund = models.PositiveIntegerField(default=0)
 

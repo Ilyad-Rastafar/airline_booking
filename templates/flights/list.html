@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Flights</h2>
+
+<form method="get" class="row mb-3">
+    {{ form.as_p }}
+    <button class="btn btn-primary">Search</button>
+</form>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Route</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+
+    {% for f in flights %}
+    <tr>
+        <td>{{ f.route }}</td>
+        <td>{{ f.date }}</td>
+        <td>{{ f.time }}</td>
+        <td>{{ f.price }}</td>
+        <td>
+            <a href="{% url 'flights:detail' f.id %}" class="btn btn-sm btn-primary">Details</a>
+        </td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="5">No flights found.</td></tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
