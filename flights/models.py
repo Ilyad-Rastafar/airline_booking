@@ -5,19 +5,34 @@ class Route(models.Model):
     origin = models.CharField(max_length=100)
     destination = models.CharField(max_length=100)
 
+    class Meta:
+        unique_together = ('origin', 'destination')
+        verbose_name = "Route"
+        verbose_name_plural = "Routes"
+
     def __str__(self):
         return f"{self.origin} → {self.destination}"
 
 
 class Flight(models.Model):
-    route = models.ForeignKey(Route, on_delete=models.CASCADE)
+    route = models.ForeignKey(
+        Route, on_delete=models.CASCADE, related_name="flights"
+    )
     airline = models.CharField(max_length=100)
-    airplane_type = models.CharField(max_length=100)
+    plane_type = models.CharField(max_length=100)
     date = models.DateField()
     time = models.TimeField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    seats = models.PositiveIntegerField()
-    cancellation_fee_percent = models.PositiveSmallIntegerField()
+    price = models.PositiveIntegerField()
+    seats_total = models.PositiveIntegerField()
+    seats_available = models.PositiveIntegerField()
+    cancel_penalty_percent = models.PositiveIntegerField(default=10)
+
+    class Meta:
+        ordering = ["date", "time"]
 
     def __str__(self):
-        return f"{self.airline} - {self.route} ({self.date} {self.time})"
+        return f"{self.route} - {self.date} {self.time}"
+
+    @property
+    def is_available(self):
+        return self.seats_available > 0
