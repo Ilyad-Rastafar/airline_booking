@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Email Verified Successfully!</h4>
+    <p>
+        Your email address has been verified successfully.
+        Your account is now fully active and you can log in.
+    </p>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">You're All Set!</h5>
+        <p>Your account is ready to use. You can now:</p>
+        <ul>
+            <li>Log in to your account</li>
+            <li>Browse available flights</li>
+            <li>Book flights</li>
+            <li>Manage your bookings</li>
+        </ul>
+    </div>
+</div>
+
+<p class="mt-4">
+    <a href="{% url 'accounts:login' %}" class="btn btn-success">Log In Now</a>
+</p>
+{% endblock %}

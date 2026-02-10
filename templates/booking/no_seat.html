@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}No Seats Available - Airline Booking{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">No Seats Available</h4>
+            <p>
+                Unfortunately, this flight is fully booked and no seats are currently available.
+            </p>
+            <hr>
+            <p>
+                <strong>{{ flight.origin }} → {{ flight.destination }}</strong><br>
+                {{ flight.departure_time|date:"F d, Y H:i" }}<br>
+                Airline: {{ flight.airline_name }}
+            </p>
+        </div>
+
+        <div class="text-center">
+            <p><a href="{% url 'flights:list' %}" class="btn btn-primary">Browse Other Flights</a></p>
+            <p class="text-muted small">Would you like to book a different flight?</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

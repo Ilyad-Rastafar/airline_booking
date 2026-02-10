@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">Verification Failed!</h4>
+    <p>{{ error }}</p>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">What Can You Do?</h5>
+        <ul>
+            <li>If the link expired, register again</li>
+            <li>Check if you're using the correct email</li>
+            <li>Contact support if you need help</li>
+        </ul>
+    </div>
+</div>
+
+<p class="mt-4">
+    <a href="{% url 'accounts:register' %}" class="btn btn-primary">Register Again</a>
+    <a href="{% url 'accounts:login' %}" class="btn btn-secondary">Back to Login</a>
+</p>
+{% endblock %}

@@ -1,18 +1,100 @@
 {% extends "base.html" %}
 
+{% block title %}{{ flight.route }} - Flight Details{% endblock %}
+
 {% block content %}
-<h2>Flight Details</h2>
+<div class="row mb-3">
+    <div class="col-md-12">
+        <a href="{% url 'flights:list' %}" class="btn btn-secondary btn-sm">&larr; Back to Flights</a>
+    </div>
+</div>
 
-<p><strong>Route:</strong> {{ flight.route }}</p>
-<p><strong>Date:</strong> {{ flight.date }}</p>
-<p><strong>Time:</strong> {{ flight.time }}</p>
-<p><strong>Price:</strong> {{ flight.price }}</p>
-<p><strong>Airline:</strong> {{ flight.airline }}</p>
+<div class="row">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h2 class="card-title mb-0">{{ flight.origin }} → {{ flight.destination }}</h2>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h5>Departure</h5>
+                        <p class="display-6">{{ flight.departure_time|date:"H:i" }}</p>
+                        <p class="text-muted">{{ flight.departure_time|date:"F d, Y" }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Flight Details</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Route:</strong> {{ flight.route }}</li>
+                            <li><strong>Airline:</strong> {{ flight.airline_name }}</li>
+                            <li><strong>Aircraft:</strong> {{ flight.airplane_type }}</li>
+                        </ul>
+                    </div>
+                </div>
 
-{% if user.is_authenticated %}
-<a href="{% url 'booking:book_flight' flight.id %}" class="btn btn-success">Book</a>
-{% else %}
-<p>Please login to book.</p>
-{% endif %}
+                <hr>
 
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Seat Information</h5>
+                        <p>
+                            {% if flight.seats_available > 0 %}
+                                <span class="badge bg-success">{{ flight.seats_available }} seats available</span>
+                            {% else %}
+                                <span class="badge bg-danger">No seats available</span>
+                            {% endif %}
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Cancellation Policy</h5>
+                        <p>
+                            <span class="badge bg-warning">{{ flight.cancel_penalty_percent }}% penalty on cancellation</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h3 class="card-title">Price</h3>
+                <p class="display-4 text-success">${{ flight.price }}</p>
+
+                {% if user.is_authenticated %}
+                    {% if flight.seats_available > 0 %}
+                        <a href="{% url 'booking:book_flight' flight.id %}" class="btn btn-success w-100 btn-lg">
+                            Book Flight
+                        </a>
+                        <p class="text-muted small mt-3">
+                            You will be charged immediately upon booking.
+                        </p>
+                    {% else %}
+                        <button class="btn btn-secondary w-100 btn-lg" disabled>
+                            Sold Out
+                        </button>
+                    {% endif %}
+                {% else %}
+                    <p class="alert alert-info mb-3">Please log in to book this flight.</p>
+                    <a href="{% url 'accounts:login' %}" class="btn btn-outline-primary w-100">
+                        Login to Book
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="card mt-3 border-info">
+            <div class="card-body">
+                <h5 class="card-title">Important</h5>
+                <ul class="small">
+                    <li>Booking is confirmed immediately</li>
+                    <li>Check your email for confirmation</li>
+                    <li>Cancellation penalties apply</li>
+                    <li>Seat selection is automatic</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

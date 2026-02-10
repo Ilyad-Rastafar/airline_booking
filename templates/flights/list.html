@@ -1,35 +1,95 @@
 {% extends "base.html" %}
 
+{% block title %}Available Flights - Airline Booking{% endblock %}
+
 {% block content %}
-<h2>Flights</h2>
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h2>Available Flights</h2>
+        <p class="text-muted">Search and book flights from our wide selection of routes</p>
+    </div>
+</div>
 
-<form method="get" class="row mb-3">
-    {{ form.as_p }}
-    <button class="btn btn-primary">Search</button>
-</form>
+<!-- Search Panel -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Search Flights</h5>
+                <form method="get" class="row g-3">
+                    <div class="col-md-4">
+                        <label for="{{ form.origin.id_for_label }}" class="form-label">Origin</label>
+                        {{ form.origin }}
+                    </div>
+                    <div class="col-md-4">
+                        <label for="{{ form.destination.id_for_label }}" class="form-label">Destination</label>
+                        {{ form.destination }}
+                    </div>
+                    <div class="col-md-3">
+                        <label for="{{ form.date.id_for_label }}" class="form-label">Date</label>
+                        {{ form.date }}
+                    </div>
+                    <div class="col-md-1 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-<table class="table table-bordered">
-    <tr>
-        <th>Route</th>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Price</th>
-        <th></th>
-    </tr>
-
-    {% for f in flights %}
-    <tr>
-        <td>{{ f.route }}</td>
-        <td>{{ f.date }}</td>
-        <td>{{ f.time }}</td>
-        <td>{{ f.price }}</td>
-        <td>
-            <a href="{% url 'flights:detail' f.id %}" class="btn btn-sm btn-primary">Details</a>
-        </td>
-    </tr>
-    {% empty %}
-    <tr><td colspan="5">No flights found.</td></tr>
-    {% endfor %}
-</table>
-
+<!-- Flights List -->
+<div class="row">
+    <div class="col-md-12">
+        {% if flights %}
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Route</th>
+                            <th>Departure</th>
+                            <th>Price</th>
+                            <th>Seats</th>
+                            <th>Airline</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for flight in flights %}
+                        <tr>
+                            <td>
+                                <strong>{{ flight.origin }}</strong> → <strong>{{ flight.destination }}</strong>
+                            </td>
+                            <td>{{ flight.departure_time|date:"M d, H:i" }}</td>
+                            <td>
+                                <span class="badge bg-success">{{ flight.price }} $</span>
+                            </td>
+                            <td>
+                                {% if flight.seats_available > 10 %}
+                                    <span class="badge bg-info">{{ flight.seats_available }} seats</span>
+                                {% elif flight.seats_available > 0 %}
+                                    <span class="badge bg-warning">{{ flight.seats_available }} seats</span>
+                                {% else %}
+                                    <span class="badge bg-danger">Sold out</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ flight.airline_name }}</td>
+                            <td>
+                                <a href="{% url 'flights:detail' flight.id %}" class="btn btn-sm btn-primary">
+                                    View Details
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="alert alert-info" role="alert">
+                <h4 class="alert-heading">No Flights Found</h4>
+                <p>We couldn't find any flights matching your search criteria. Try adjusting your filters.</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
 {% endblock %}

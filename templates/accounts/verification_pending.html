@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="alert alert-info" role="alert">
+    <h4 class="alert-heading">Verification Email Sent!</h4>
+    <p>
+        A verification link has been sent to your email address.
+        Please check your inbox and click the link to verify your email address.
+    </p>
+    <hr>
+    <p class="mb-0">
+        If you don't see the email, please check your spam folder.
+        The verification link expires in 24 hours.
+    </p>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">What's Next?</h5>
+        <ol>
+            <li>Check your email for a verification link</li>
+            <li>Click the link to verify your email address</li>
+            <li>Return to our site and log in</li>
+        </ol>
+    </div>
+</div>
+
+<p class="mt-4">
+    <a href="{% url 'accounts:login' %}" class="btn btn-primary">Back to Login</a>
+</p>
+{% endblock %}
